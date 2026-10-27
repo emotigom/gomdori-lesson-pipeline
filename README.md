@@ -1,4 +1,4 @@
-# Nextbridge Lesson Pipeline
+# Gomdori Lesson Pipeline
 
 `nextbridge-lesson-pipeline`은 교안 내용을 생성하거나 품질 기준을 정의하는 저장소가 아닙니다.
 
