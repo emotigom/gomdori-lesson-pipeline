@@ -1,8 +1,8 @@
 # Gomdori Lesson Pipeline
 
-`nextbridge-lesson-pipeline`은 교안 내용을 생성하거나 품질 기준을 정의하는 저장소가 아닙니다.
+`gomdori-lesson-pipeline`은 교안 내용을 생성하거나 품질 기준을 정의하는 저장소가 아닙니다.
 
-- **Factory** (`emotigom/nextbridge-lesson-factory`): 좋은 교안의 구조·언어·품질 계약과 산출물 QA
+- **Factory** (`emotigom/gomdori-lesson-factory`): 좋은 교안의 구조·언어·품질 계약과 산출물 QA
 - **Pipeline** (이 저장소): 사람 승인 순서, 다음 단계 실행 권한, Factory 검증 결과의 연결
 
 ## 핵심 원칙
@@ -66,7 +66,7 @@ ChatGPT 대화에서 승인된 실제 `handoff.json`은 Factory가 먼저 검증
 ```bash
 python3 tools/handoff_sync.py \
   --handoff /private-work/my-new-lesson/handoff/handoff.json \
-  --factory-root ../nextbridge-lesson-factory \
+  --factory-root ../gomdori-lesson-factory \
   --out-dir /private-work/my-new-lesson/pipeline-draft
 ```
 
@@ -88,7 +88,7 @@ pipeline-draft/
 ```bash
 python3 tools/handoff_lineage.py \
   --handoff /private-work/course/handoff.json \
-  --factory-root ../nextbridge-lesson-factory \
+  --factory-root ../gomdori-lesson-factory \
   --factory-commit <40-char-sha> \
   --captured-at 2026-08-16T22:00:00+09:00 \
   --out handoffs/course-id.json
@@ -110,7 +110,7 @@ Factory checkout이 준비된 환경에서는 design bundle/proof 또는 handoff
 ```bash
 python3 tools/pipelinectl.py factory-check \
   --state fixtures/pipeline/pass/state.json \
-  --factory-root ../nextbridge-lesson-factory
+  --factory-root ../gomdori-lesson-factory
 ```
 
 ## 저장소 경계

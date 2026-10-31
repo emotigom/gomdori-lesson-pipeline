@@ -1,6 +1,6 @@
 # CI execution boundary
 
-Pipeline CI가 실행하는 외부 저장소 코드는 `emotigom/nextbridge-lesson-factory`로 고정합니다.
+Pipeline CI가 실행하는 외부 저장소 코드는 `emotigom/gomdori-lesson-factory`로 고정합니다.
 
 - `factory.repository`는 다른 값이면 hard fail합니다.
 - `factory.commitSha`는 정확한 40자리 commit SHA여야 합니다.

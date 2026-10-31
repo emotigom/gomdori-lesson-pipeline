@@ -14,8 +14,8 @@
 
 ## 결정
 
-1. `nextbridge-lesson-factory`는 **품질 계약과 검증 엔진**이다.
-2. `nextbridge-lesson-pipeline`은 **승인 순서와 실행 권한 관리자**다.
+1. `gomdori-lesson-factory`는 **품질 계약과 검증 엔진**이다.
+2. `gomdori-lesson-pipeline`은 **승인 순서와 실행 권한 관리자**다.
 3. Pipeline의 Factory 참조는 반드시 40자리 commit SHA에 고정한다.
 4. Pipeline은 승인 기록에서 milestone을 계산한다. 사람이 별도 `stage` 문자열을 편집하지 않는다.
 5. 차시 승인은 1번부터 연속되어야 한다. 중간 차시를 건너뛴 승인은 hard fail이다.
