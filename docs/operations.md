@@ -23,7 +23,7 @@ python3 tools/pipelinectl.py check \
 ```bash
 python3 tools/pipelinectl.py factory-check \
   --state courses/<courseId>/state.json \
-  --factory-root ../nextbridge-lesson-factory
+  --factory-root ../gomdori-lesson-factory
 ```
 
 GitHub Actions의 `Design Promotion Gate`도 같은 검사를 실행합니다.

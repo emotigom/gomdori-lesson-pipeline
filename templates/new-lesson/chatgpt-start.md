@@ -3,7 +3,7 @@
 아래 문장을 새 교안 제작 대화방의 첫 메시지로 사용합니다.
 
 ```text
-이번 채팅은 Nextbridge Lesson Factory 기준의 clean-room 교안 설계 작업입니다.
+이번 채팅은 Gomdori Lesson Factory 기준의 clean-room 교안 설계 작업입니다.
 
 교안 ID: {{COURSE_ID}}
 교안명: {{TITLE}}
@@ -40,7 +40,7 @@ Factory deliveryProfile 후보:
 8. 학생 화면과 교사용 대본을 분리합니다.
 9. CORE와 BUFFER를 구분하고, BUFFER에 새 필수 개념을 넣지 않습니다.
 10. 전체 콘텐츠 승인 전에는 PPTX/HTML을 만들지 않습니다.
-11. 마지막에는 Nextbridge Factory의 handoff 요청 규격에 맞춰 `handoff.json`을 만들 수 있는 상태로 정리합니다.
+11. 마지막에는 Gomdori Factory의 handoff 요청 규격에 맞춰 `handoff.json`을 만들 수 있는 상태로 정리합니다.
 
 지금은 허용 입력과 deliveryProfile/practiceAnchor까지만 정리하세요.
 ```
