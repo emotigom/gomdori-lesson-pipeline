@@ -29,7 +29,7 @@ def state_from_handoff(handoff: dict, lineage: dict, factory_commit: str):
         'activeWip':True,
         'sessionCount':len(handoff['courseMap']['sessions']),
         'factory':{
-            'repository':'emotigom/nextbridge-lesson-factory',
+            'repository':'emotigom/gomdori-lesson-factory',
             'commitSha':factory_commit,
             'verificationMode':'HANDOFF_LINEAGE',
             'designRefPath':f'handoffs/{handoff["courseId"]}.json',

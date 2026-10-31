@@ -31,7 +31,7 @@ def build_initial_state(course_id: str, sessions: int, factory_commit: str):
         'activeWip':True,
         'sessionCount':sessions,
         'factory':{
-            'repository':'emotigom/nextbridge-lesson-factory',
+            'repository':'emotigom/gomdori-lesson-factory',
             'commitSha':factory_commit,
             'verificationMode':'HANDOFF_LINEAGE',
             'designRefPath':f'handoffs/{course_id}.json',
@@ -78,7 +78,7 @@ def create_workspace(course_id: str, title: str, sessions: int, workspace: Path,
     (workspace/'pipeline-state.draft.json').write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     metadata={
         'schemaVersion':'1.0.0','courseId':course_id,'title':title,'sessionCount':sessions,
-        'factoryRepository':'emotigom/nextbridge-lesson-factory','factoryCommitSha':factory_commit,
+        'factoryRepository':'emotigom/gomdori-lesson-factory','factoryCommitSha':factory_commit,
         'publicGitReady':False,
     }
     (workspace/'workspace.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
