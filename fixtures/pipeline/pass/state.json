@@ -4,7 +4,7 @@
   "activeWip": true,
   "sessionCount": 1,
   "factory": {
-    "repository": "emotigom/nextbridge-lesson-factory",
+    "repository": "emotigom/gomdori-lesson-factory",
     "commitSha": "5402f691d2c9d127b05d2063682be266645ee273",
     "verificationMode": "PUBLIC_BUNDLE",
     "designRefPath": "fixtures/design/clean-room-pass"

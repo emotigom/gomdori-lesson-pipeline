@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://nextbridge.example/contracts/pipeline-state.schema.json",
-  "title": "Nextbridge Lesson Pipeline State",
+  "$id": "https://gomdori.example/contracts/pipeline-state.schema.json",
+  "title": "Gomdori Lesson Pipeline State",
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion","courseId","activeWip","sessionCount","factory","approvals"],
@@ -15,7 +15,7 @@
       "additionalProperties": false,
       "required": ["repository","commitSha","verificationMode","designRefPath"],
       "properties": {
-        "repository": {"const": "emotigom/nextbridge-lesson-factory"},
+        "repository": {"const": "emotigom/gomdori-lesson-factory"},
         "commitSha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
         "verificationMode": {"enum": ["HANDOFF_LINEAGE","PUBLIC_BUNDLE","PRIVATE_PROOF"]},
         "designRefPath": {"type": "string", "minLength": 1}
