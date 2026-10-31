@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FACTORY_REPOSITORY = 'emotigom/nextbridge-lesson-factory'
+FACTORY_REPOSITORY = 'emotigom/gomdori-lesson-factory'
 SHA40 = re.compile(r'^[0-9a-f]{40}$')
 SHA64 = re.compile(r'^[0-9a-f]{64}$')
 SESSION_TARGET = re.compile(r'^SESSION_(\d+)_APPROVED$')

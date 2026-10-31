@@ -8,7 +8,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-FACTORY_REPOSITORY = 'emotigom/nextbridge-lesson-factory'
+FACTORY_REPOSITORY = 'emotigom/gomdori-lesson-factory'
 
 
 def sha256(path: Path):
